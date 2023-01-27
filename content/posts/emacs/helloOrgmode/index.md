@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
-date = 2023-01-15T19:00:00+08:00
-lastmod = 2023-01-18T17:54:08+08:00
+date = 2023-01-19T19:00:00+08:00
+lastmod = 2023-01-27T16:13:48+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -143,7 +143,7 @@ xyplot(1:10 ~ 1:10)
 #+end_src
 ```
 
-{{< figure src="R.png" caption="<span class=\"figure-number\">Figure 1: </span>R code" >}}
+{{< figure src="R.png" >}}
 
 
 ### 2.7 Gnuplot {#2-dot-7-gnuplot}
@@ -154,21 +154,18 @@ plot sin(x) + cos(x)
 #+end_src
 ```
 
-{{< figure src="gnuplot.png" caption="<span class=\"figure-number\">Figure 2: </span>Gnuplot code" >}}
+{{< figure src="gnuplot.png" >}}
 
 
 ### 2.8 Tikz {#2-dot-8-tikz}
 
-You can write tikz codes in Org-mode.
-
 ```org
 #+name: tikz example
 #+header: :file "./tikz.png"
-#+header: :results raw :exports both :fit yes :border 0cm
+#+header: :results output graphics file :exports both :fit yes :border 0cm
 #+header: :imagemagick t :iminoptions -density 300
-#+header: :imoutoptions -quality 300 -flatten
+#+header: :imoutoptions -geometry 600 -flatten
 #+header: :headers '("\\usepackage{tikz} \\usetikzlibrary{backgrounds, quotes, angles, intersections, calc}")
-#+CAPTION: tikz picture
 #+begin_src latex :results output graphics file :exports both
 \begin{tikzpicture}
   % Your codes.
@@ -178,9 +175,6 @@ You can write tikz codes in Org-mode.
 
 <a id="code-snippet--tikz example"></a>
 ```latex
-% Signpost with loads applied
-% Author: Paul Gessler
-% Vector Styles
 \tikzstyle{load}   = [ultra thick,-latex]
 \tikzstyle{stress} = [-latex]
 \tikzstyle{dim}    = [latex-latex]
@@ -240,23 +234,19 @@ You can write tikz codes in Org-mode.
     \draw[-latex] (\x,0,5.5) -- ++(0,0,-0.5);
   }
   \draw (-0.2,0,0) -- ++(-2,0,5) node[above,xshift=0.5cm] {$w_{x}=\frac{z}{h_1+h_2} w_0$};
-\end{tikzpicture} %
+\end{tikzpicture}
 ```
 <div class="src-block-caption">
   <span class="src-block-number"><a href="#code-snippet--tikz example">Code Snippet 1</a>:</span>
   Tikz codes
 </div>
 
-{{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 1: </span>Tikz codes: <https://texample.net/tikz/examples/signpost/>" >}}
+{{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 1: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}}
 
 
-## 3 Others {#3-others}
+### 3.1 HTML and CSS {#3-dot-1-html-and-css}
 
-
-### 3.1 HTML and css {#3-dot-1-html-and-css}
-
-If you export the documents to HTML files, [here](https://olmon.gitlab.io/org-themes/) are the collections of the css files for Org-mode.
-You can add these headers to load the css files.
+[Here](https://olmon.gitlab.io/org-themes/) are the collections of CSS to make HTML more readable.
 
 ```org
 #+OPTIONS: html-style:nil
@@ -266,25 +256,20 @@ You can add these headers to load the css files.
 
 ### 3.2 Tangle and detangle {#3-dot-2-tangle-and-detangle}
 
-First you should write `tangle: PATH/python.py` and `comment: link` above the code block.
-Use `C-c C-v t` in the Org-mode file to tangle codes. This will make a code file in the path that you defied before.
-Open this code file in Org-mode. Use `M-x org-babel-detangle` in the code file. Then the codes in Org-mode file will be updated automatically.
+Add `tangle: PATH/python.py` and `comment: link` above the code block.
+Use `C-c C-v t` to tangle codes.
+Open the code file in Emacs and type `M-x org-babel-detangle` to update the code block in the Org file.
 See [2.4 Python](#2-dot-4-python) and [2.6 R](#2-dot-6-r).
 
 
 ### 3.3 Auto number the picture {#3-dot-3-auto-number-the-picture}
 
-You can use the `#+caption` or `#+attr_html: :title` function to give titles for figures or codes. You can write a link or make fonts bold, italic et al.
-However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) in Org-mode where the `#+caption` can not export the correct numbers of the figures. You should modify the figure number in the output file.
+Use the `#+caption` function to assign titles to figures or codes.
+However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) where the `#+caption` can not export the correct numbers of the figures. The figure numbers need be changed manually.
 
 ```org
-#+html: <style>.center {text-align: center; display:block;}</style>
-#+attr_html: :class center
-#+attr_html: :title Snoopy
-#+CAPTION: Snoopy
+#+caption: [[https://en.wikipedia.org/wiki/Peanuts][Snoopy]]
 [[file:snoopy.png]]
 ```
 
-Here is the result.
-
-{{< figure src="snoopy.png" caption="<span class=\"figure-number\">Figure 1: </span>Snoopy: <https://en.wikipedia.org/wiki/Peanuts>" title="Snoopy: https://en.wikipedia.org/wiki/Peanuts" >}}
+{{< figure src="snoopy.png" caption="<span class=\"figure-number\">Figure 2: </span>[Snoopy](https://en.wikipedia.org/wiki/Peanuts)" >}}

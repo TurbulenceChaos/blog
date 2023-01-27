@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-27T19:00:00+08:00
-lastmod = 2023-01-27T16:33:55+08:00
+lastmod = 2023-01-27T16:39:52+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false

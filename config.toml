@@ -24,6 +24,10 @@ disablePathToLower = true
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 
+# [markup.highlight]
+#   codeFences = true
+#   style = "emacs"
+
 [menu]
 # [[menu.before]]
 

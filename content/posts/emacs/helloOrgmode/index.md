@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-01-28T19:26:27+08:00
+lastmod = 2023-01-28T21:45:06+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -166,7 +166,7 @@ plot sin(x) + cos(x)
 #+header: :imagemagick t :iminoptions -density 300
 #+header: :imoutoptions -geometry 600 -flatten
 #+header: :headers '("\\usepackage{tikz} \\usetikzlibrary{backgrounds, quotes, angles, intersections, calc}")
-#+begin_src latex :results output graphics file :exports both
+#+begin_src latex
 \begin{tikzpicture}
   % Your codes.
 \end{tikzpicture}

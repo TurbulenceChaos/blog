@@ -1,7 +1,7 @@
 +++
 title = "Home"
 date = 2023-01-28T11:00:00+08:00
-lastmod = 2023-01-28T18:00:29+08:00
+lastmod = 2023-01-28T18:26:37+08:00
 draft = false
 bookToc = false
 bookFlatSection = false
@@ -21,7 +21,7 @@ bookCollapseSection = false
 
 <--->
 
-{{< figure src="/ox-hugo/Einstein.jpg" caption="<span class=\"figure-number\">Figure 1: </span>[Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein)" width="30%" height="30%" >}}
+{{< figure src="Einstein.jpg" caption="<span class=\"figure-number\">Figure 1: </span>[Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein)" width="30%" height="30%" >}}
 
 {{< /columns >}}
 
@@ -38,6 +38,6 @@ bookCollapseSection = false
 
 <--->
 
-{{< figure src="/ox-hugo/Turbulence.jpg" caption="<span class=\"figure-number\">Figure 2: </span>[Turbulence](https://en.wikipedia.org/wiki/Turbulence)" width="30%" height="30%" >}}
+{{< figure src="Turbulence.jpg" caption="<span class=\"figure-number\">Figure 2: </span>[Turbulence](https://en.wikipedia.org/wiki/Turbulence)" width="30%" height="30%" >}}
 
 {{< /columns >}}

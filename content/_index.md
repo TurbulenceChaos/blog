@@ -61,6 +61,6 @@ Master's student in Hydrodynamics (2021-2024).
 
 <--->
 
-{{< figure src="Yukawa.jpg" caption="<span class=\"figure-number\">Figure 1: </span>[Hideki Yukawa](https://en.wikipedia.org/wiki/Hideki_Yukawa)" width="30%" height="30%" >}}
+{{< figure src="Yukawa.jpg" caption="<span class=\"figure-number\">Figure 3: </span>[Hideki Yukawa](https://en.wikipedia.org/wiki/Hideki_Yukawa)" width="30%" height="30%" >}}
 
 {{< /columns >}}

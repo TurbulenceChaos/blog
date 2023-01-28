@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-01-28T18:03:31+08:00
+lastmod = 2023-01-28T19:26:27+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -242,6 +242,9 @@ plot sin(x) + cos(x)
 </div>
 
 {{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 1: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}}
+
+
+## 3 Others {#3-others}
 
 
 ### 3.1 HTML and CSS {#3-dot-1-html-and-css}

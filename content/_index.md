@@ -1,7 +1,7 @@
 +++
 title = "Home"
 date = 2023-01-28T11:00:00+08:00
-lastmod = 2023-01-28T19:01:53+08:00
+lastmod = 2023-01-28T22:00:40+08:00
 draft = false
 bookToc = false
 bookFlatSection = false
@@ -61,6 +61,6 @@ Master's student in Hydrodynamics (2021-2024).
 
 <--->
 
-{{< figure src="Yukawa.jpg" caption="<span class=\"figure-number\">Figure 3: </span>[Hideki Yukawa](https://en.wikipedia.org/wiki/Hideki_Yukawa)" width="30%" height="30%" >}}
+{{< figure src="Yukawa.jpg" caption="<span class=\"figure-number\">Figure 1: </span>[Hideki Yukawa](https://en.wikipedia.org/wiki/Hideki_Yukawa)" width="30%" height="30%" >}}
 
 {{< /columns >}}

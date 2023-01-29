@@ -1,7 +1,7 @@
 +++
 title = "GTD"
 date = 2023-01-30T02:00:00+08:00
-lastmod = 2023-01-30T02:06:39+08:00
+lastmod = 2023-01-30T02:10:38+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -35,6 +35,7 @@ color: green;
 
 ```org
 #+begin_export html
+<style>
 .org-todo {
 font-size: 0.8em;
 font-weight: 700;

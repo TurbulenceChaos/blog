@@ -1,0 +1,12 @@
+<!-- {{with .Site.Author.name}}
+<font size=.875rem ; color = "black" > Author: {{ . }} <br> </font>
+{{ end }}  -->
+
+{{ with .Date }}
+<font size=1.05rem color = "gray">finished on {{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }} <br> </font>
+{{ end }}
+
+{{ with .Lastmod }}
+<font size=1.05rem color = "gray"> updated on {{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }} </font>
+{{ end }}
+<!-- .875 -->

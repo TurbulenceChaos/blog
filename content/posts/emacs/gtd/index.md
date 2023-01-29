@@ -1,7 +1,7 @@
 +++
 title = "GTD"
 date = 2023-01-30T02:00:00+08:00
-lastmod = 2023-01-30T02:17:29+08:00
+lastmod = 2023-01-30T02:20:10+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -77,13 +77,13 @@ color: green;
 ### TWO <code>[66%]</code> {#two}
 
 
-#### <span class="org-todo todo TODO">TODO</span> head3 {#head3}
-
-
-#### <span class="org-todo done DONE">DONE</span> head4 {#head4}
+#### <span class="org-todo todo TODO">TODO</span> head4 {#head4}
 
 
 #### <span class="org-todo done DONE">DONE</span> head5 {#head5}
+
+
+#### <span class="org-todo done DONE">DONE</span> head6 {#head6}
 
 
 ### <span class="org-todo done DONE">DONE</span> THREE <code>[100%]</code> {#three}

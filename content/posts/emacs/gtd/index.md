@@ -1,7 +1,7 @@
 +++
 title = "GTD"
 date = 2023-01-30T02:00:00+08:00
-lastmod = 2023-01-30T02:10:38+08:00
+lastmod = 2023-01-30T02:17:29+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -15,7 +15,7 @@ bookCollapseSection = false
 Add the following codes in Org-mode file so that `TODO` and `DONE` can be highlighted in HUGO.
 
 <style>
-/* *** Org table-caption set to be in the middle of the page*/
+/* Org table-caption set to be in the middle of the page */
 .table-caption {
 text-align: center;
 }
@@ -23,11 +23,11 @@ text-align: center;
 font-size: 0.8em;
 font-weight: 700;
 }
-/* *** Org TODO set to TODO state */
+/* Org TODO set to TODO state */
 .org-todo.todo {
 color: #e60000;
 }
-/* *** Org TODO set to DONE state */
+/* Org TODO set to DONE state */
 .org-todo.done {
 color: green;
 }
@@ -36,15 +36,19 @@ color: green;
 ```org
 #+begin_export html
 <style>
+/* Org table-caption set to be in the middle of the page */
+.table-caption {
+text-align: center;
+}
 .org-todo {
 font-size: 0.8em;
 font-weight: 700;
 }
-/* *** Org TODO set to TODO state */
+/* Org TODO set to TODO state */
 .org-todo.todo {
 color: #e60000;
 }
-/* *** Org TODO set to DONE state */
+/* Org TODO set to DONE state */
 .org-todo.done {
 color: green;
 }

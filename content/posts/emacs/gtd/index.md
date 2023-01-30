@@ -1,7 +1,7 @@
 +++
 title = "GTD"
 date = 2023-01-30T02:00:00+08:00
-lastmod = 2023-01-30T02:20:10+08:00
+lastmod = 2023-01-30T15:18:14+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -68,13 +68,13 @@ color: green;
 #### <span class="org-todo done DONE">DONE</span> head1 {#head1}
 
 
-#### <span class="org-todo todo TODO">TODO</span> head2 {#head2}
+#### <span class="org-todo done DONE">DONE</span> head2 {#head2}
 
 
-#### <span class="org-todo todo TODO">TODO</span> head3 {#head3}
+#### <span class="org-todo done DONE">DONE</span> head3 {#head3}
 
 
-### TWO <code>[66%]</code> {#two}
+### TWO <code>[2/3]</code> {#two}
 
 
 #### <span class="org-todo todo TODO">TODO</span> head4 {#head4}
@@ -86,24 +86,31 @@ color: green;
 #### <span class="org-todo done DONE">DONE</span> head6 {#head6}
 
 
-### <span class="org-todo done DONE">DONE</span> THREE <code>[100%]</code> {#three}
+### <span class="org-todo todo TODO">TODO</span> THREE <code>[33%]</code> {#three}
 
 -   [X] 111
--   [X] 222
--   [X] 333
+-   [ ] 222
+-   [ ] 333
+
+
+### <span class="org-todo done DONE">DONE</span> Four {#four}
+
+
+### <span class="org-todo todo TODO">TODO</span> Five {#five}
 
 <--->
 
 <div class="table-caption">
   <span class="table-number">Table 1:</span>
-  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2023-01-30 Mon 01:00]</span></span>
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2023-01-30 Mon 15:17]</span></span>
 </div>
 
 | Headline               | Time     |      |
 |------------------------|----------|------|
-| **Total time**         | **0:21** |      |
-| 2 Time tracing         | 0:21     |      |
+| **Total time**         | **0:10** |      |
+| 2 Time tracing         | 0:10     |      |
 | &ensp;&ensp;ONE [100%] |          | 0:01 |
-| &ensp;&ensp;TWO [66%]  |          | 0:20 |
+| &ensp;&ensp;TWO [2/3]  |          | 0:07 |
+| &ensp;&ensp;Four       |          | 0:02 |
 
 {{< /columns >}}

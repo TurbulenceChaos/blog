@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-01-28T23:07:27+08:00
+lastmod = 2023-01-31T00:32:14+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -69,8 +69,8 @@ tree
 #include <iostream>
 using namespace std;
 int main() {
-cout << "Hello, C++!" << endl;
-return 0;
+  cout << "Hello, C++!" << endl;
+  return 0;
 }
 #+end_src
 ```
@@ -143,7 +143,7 @@ xyplot(1:10 ~ 1:10)
 #+end_src
 ```
 
-{{< figure src="R.png" >}}
+{{< figure src="R.png" caption="<span class=\"figure-number\">Figure 1: </span>R code" >}}
 
 
 ### 2.7 Gnuplot {#2-dot-7-gnuplot}
@@ -154,7 +154,7 @@ plot sin(x) + cos(x)
 #+end_src
 ```
 
-{{< figure src="gnuplot.png" >}}
+{{< figure src="gnuplot.png" caption="<span class=\"figure-number\">Figure 2: </span>Gnuplot" >}}
 
 
 ### 2.8 Tikz {#2-dot-8-tikz}
@@ -245,7 +245,7 @@ plot sin(x) + cos(x)
 #+end_src
 ```
 
-{{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 1: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}}
+{{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 3: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}}
 
 
 ## 3 Others {#3-others}
@@ -272,11 +272,12 @@ See [2.4 Python](#2-dot-4-python) and [2.6 R](#2-dot-6-r).
 ### 3.3 Auto number the picture {#3-dot-3-auto-number-the-picture}
 
 Use the `#+caption` function to assign titles to figures or codes.
-However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) where the `#+caption` can not export the correct numbers of the figures. The figure numbers need be changed manually.
+However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) in org 9.6 where the `#+caption` can not export the correct numbers of the figures. You need to modify them manually.
+This bug has been fixed in org 9.6.1. If you use doom emacs, you can add `(unpin! org)` in `~/.doom.d/packages.el` and type `doom upgrade` in the shell command to update the org version.
 
 ```org
 #+caption: [[https://en.wikipedia.org/wiki/Peanuts][Snoopy]]
 [[file:snoopy.png]]
 ```
 
-{{< figure src="snoopy.png" caption="<span class=\"figure-number\">Figure 2: </span>[Snoopy](https://en.wikipedia.org/wiki/Peanuts)" >}}
+{{< figure src="snoopy.png" caption="<span class=\"figure-number\">Figure 4: </span>[Snoopy](https://en.wikipedia.org/wiki/Peanuts)" >}}

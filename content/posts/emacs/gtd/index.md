@@ -1,7 +1,7 @@
 +++
 title = "GTD"
 date = 2023-01-30T02:00:00+08:00
-lastmod = 2023-01-30T15:23:00+08:00
+lastmod = 2023-01-30T15:40:43+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -102,7 +102,7 @@ color: green;
 
 <div class="table-caption">
   <span class="table-number">Table 1:</span>
-  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2023-01-30 Mon 15:22]</span></span>
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2023-01-30 Mon 15:40]</span></span>
 </div>
 
 | Headline               | Time     |      |
@@ -111,6 +111,6 @@ color: green;
 | 2 Time tracing         | 0:10     |      |
 | &ensp;&ensp;ONE [100%] |          | 0:01 |
 | &ensp;&ensp;TWO [2/3]  |          | 0:07 |
-| &ensp;&ensp;Four       |          | 0:02 |
+| &ensp;&ensp;FOUR       |          | 0:02 |
 
 {{< /columns >}}

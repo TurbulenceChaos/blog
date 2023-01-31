@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-01-31T00:43:40+08:00
+lastmod = 2023-01-31T17:21:35+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -12,7 +12,7 @@ bookCollapseSection = false
 
 ## 1 Hello Org-mode {#1-hello-org-mode}
 
-This article is written to show how to write and run codes in Org-mode.
+This article is written to show how to write and run codes in Org-mode. <br/>
 
 
 ## 2 Codes in Org-babel {#2-codes-in-org-babel}
@@ -119,7 +119,7 @@ ans = x
 
 ### 2.6 R {#2-dot-6-r}
 
-Use the `session: *code buffer name*` so that different R code blocks can share the data. The default buffer name is "R".
+Use the `session: *code buffer name*` so that different R code blocks can share the data. The default buffer name is "R". <br/>
 
 ```org
 #+begin_src R :session *RCode* :results output :exports both :tangle R.R :comments link
@@ -143,7 +143,7 @@ xyplot(1:10 ~ 1:10)
 #+end_src
 ```
 
-{{< figure src="R.png" caption="<span class=\"figure-number\">Figure 1: </span>R code" >}}
+{{< figure src="R.png" caption="<span class=\"figure-number\">Figure 1: </span>R code" >}} <br/>
 
 
 ### 2.7 Gnuplot {#2-dot-7-gnuplot}
@@ -154,7 +154,7 @@ plot sin(x) + cos(x)
 #+end_src
 ```
 
-{{< figure src="gnuplot.png" caption="<span class=\"figure-number\">Figure 2: </span>Gnuplot" >}}
+{{< figure src="gnuplot.png" caption="<span class=\"figure-number\">Figure 2: </span>Gnuplot" >}} <br/>
 
 
 ### 2.8 Tikz {#2-dot-8-tikz}
@@ -245,7 +245,7 @@ plot sin(x) + cos(x)
 #+end_src
 ```
 
-{{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 3: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}}
+{{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 3: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}} <br/>
 
 
 ## 3 Others {#3-others}
@@ -253,7 +253,7 @@ plot sin(x) + cos(x)
 
 ### 3.1 HTML and CSS {#3-dot-1-html-and-css}
 
-[Here](https://olmon.gitlab.io/org-themes/) are the collections of CSS to make HTML more readable.
+[Here](https://olmon.gitlab.io/org-themes/) are the collections of CSS to make HTML more readable. <br/>
 
 ```org
 #+OPTIONS: html-style:nil
@@ -263,21 +263,19 @@ plot sin(x) + cos(x)
 
 ### 3.2 Tangle and detangle {#3-dot-2-tangle-and-detangle}
 
-Add `tangle: PATH/python.py` and `comment: link` above the code block.
-Use `C-c C-v t` to tangle codes.
-Open the code file in Emacs and type `M-x org-babel-detangle` to update the code block in the Org file.
-See [2.4 Python](#2-dot-4-python) and [2.6 R](#2-dot-6-r).
+Add `tangle: PATH/python.py` and `comment: link` above the code block. Use `C-c C-v t` to tangle codes. Open the code file in Emacs and type `M-x org-babel-detangle` to update the code block in the Org file. <br/>
+See [2.4 Python](#2-dot-4-python) and [2.6 R](#2-dot-6-r). <br/>
 
 
 ### 3.3 Auto number the picture {#3-dot-3-auto-number-the-picture}
 
-You can use the `#+caption` function to assign titles to figures or codes.
-However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) in org 9.6 where the figures will get the same number in the output file. You need to modify them manually.
-This bug has been fixed in org 9.6.1. If you use doom emacs, you can add `(unpin! org)` in `~/.doom.d/packages.el` and type `doom upgrade` in the shell command to update the org.
+You can use the `#+caption` function to assign titles to figures or codes. However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) in org 9.6 where the figures will get the same number in the output file. You need to modify them manually. This bug has been fixed in org 9.6.1. <br/>
+If you use doom emacs, you can add `(unpin! org)` in `~/.doom.d/packages.el` and type `doom upgrade` in the shell command to update the org. <br/>
 
 ```org
 #+caption: [[https://en.wikipedia.org/wiki/Peanuts][Snoopy]]
 [[file:snoopy.png]]
 ```
 
-{{< figure src="snoopy.png" caption="<span class=\"figure-number\">Figure 4: </span>[Snoopy](https://en.wikipedia.org/wiki/Peanuts)" >}}
+{{< figure src="snoopy.png" caption="<span class=\"figure-number\">Figure 4: </span>[Snoopy](https://en.wikipedia.org/wiki/Peanuts)" >}} <br/>
+

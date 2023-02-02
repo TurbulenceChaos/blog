@@ -1,7 +1,7 @@
 +++
 title = "GTD"
 date = 2023-01-30T02:00:00+08:00
-lastmod = 2023-01-30T15:40:43+08:00
+lastmod = 2023-02-02T22:29:09+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -12,7 +12,7 @@ bookCollapseSection = false
 
 ## 1 Highlight `DONE` and `TODO` in HUGO {#1-highlight-done-and-todo-in-hugo}
 
-Add the following codes in Org-mode file so that `TODO` and `DONE` can be highlighted in HUGO.
+Add the following codes in Org-mode file so that `TODO` and `DONE` can be highlighted in HUGO. <br/>
 
 <style>
 /* Org table-caption set to be in the middle of the page */
@@ -88,9 +88,9 @@ color: green;
 
 ### <span class="org-todo todo TODO">TODO</span> THREE <code>[33%]</code> {#three}
 
--   [X] 111
--   [ ] 222
--   [ ] 333
+-   [X] 111 <br/>
+-   [ ] 222 <br/>
+-   [ ] 333 <br/>
 
 
 ### <span class="org-todo done DONE">DONE</span> FOUR {#four}
@@ -114,3 +114,4 @@ color: green;
 | &ensp;&ensp;FOUR       |          | 0:02 |
 
 {{< /columns >}}
+

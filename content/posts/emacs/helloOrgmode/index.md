@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-01-31T17:21:35+08:00
+lastmod = 2023-02-02T22:59:11+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -30,17 +30,16 @@ tree
 #+RESULTS:
 #+begin_example
 .
-├── R.R
 ├── R.png
+├── babel-stable-985
 ├── csv.csv
+├── f90.f90
 ├── gnuplot.png
-├── octave-workspace
 ├── org.org
-├── py.py
 ├── snoopy.png
 └── tikz.png
 
-0 directories, 9 files
+1 directory, 7 files
 #+end_example
 ```
 
@@ -81,7 +80,31 @@ int main() {
 ```
 
 
-### 2.4 Python {#2-dot-4-python}
+### 2.4 Fortran {#2-dot-4-fortran}
+
+```fortran
+program hello
+   implicit none
+   write (*, *) 'Hello Fortran!'
+end program hello
+```
+
+```org
+#+begin_src fortran :export none :tangle fortran.f90 :comments link
+program hello
+   implicit none
+   write (*, *) 'Hello Fortran!'
+end program hello
+#+end_src
+```
+
+```org
+#+RESULTS:
+: Hello Fortran!
+```
+
+
+### 2.5 Python {#2-dot-5-python}
 
 ```org
 #+begin_src python :session :results output :exports both :tangle py.py :comments link
@@ -98,7 +121,7 @@ print(math.pi)
 ```
 
 
-### 2.5 Octave {#2-dot-5-octave}
+### 2.6 Octave {#2-dot-6-octave}
 
 ```org
 #+begin_src octave :session :results output :exports both
@@ -117,7 +140,7 @@ ans = x
 ```
 
 
-### 2.6 R {#2-dot-6-r}
+### 2.7 R {#2-dot-7-r}
 
 Use the `session: *code buffer name*` so that different R code blocks can share the data. The default buffer name is "R". <br/>
 
@@ -146,7 +169,7 @@ xyplot(1:10 ~ 1:10)
 {{< figure src="R.png" caption="<span class=\"figure-number\">Figure 1: </span>R code" >}} <br/>
 
 
-### 2.7 Gnuplot {#2-dot-7-gnuplot}
+### 2.8 Gnuplot {#2-dot-8-gnuplot}
 
 ```org
 #+begin_src gnuplot :session :file gnuplot.png :exports both
@@ -157,7 +180,7 @@ plot sin(x) + cos(x)
 {{< figure src="gnuplot.png" caption="<span class=\"figure-number\">Figure 2: </span>Gnuplot" >}} <br/>
 
 
-### 2.8 Tikz {#2-dot-8-tikz}
+### 2.9 Tikz {#2-dot-9-tikz}
 
 ```org
 #+name: tikz example
@@ -264,7 +287,7 @@ plot sin(x) + cos(x)
 ### 3.2 Tangle and detangle {#3-dot-2-tangle-and-detangle}
 
 Add `tangle: PATH/python.py` and `comment: link` above the code block. Use `C-c C-v t` to tangle codes. Open the code file in Emacs and type `M-x org-babel-detangle` to update the code block in the Org file. <br/>
-See [2.4 Python](#2-dot-4-python) and [2.6 R](#2-dot-6-r). <br/>
+See [2.5 Python](#2-dot-5-python) and [2.7 R](#2-dot-7-r). <br/>
 
 
 ### 3.3 Auto number the picture {#3-dot-3-auto-number-the-picture}

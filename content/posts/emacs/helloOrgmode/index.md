@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-02-02T23:03:37+08:00
+lastmod = 2023-02-02T23:05:29+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -83,7 +83,7 @@ int main() {
 ### 2.4 Fortran {#2-dot-4-fortran}
 
 ```org
-#+begin_src fortran :export none :tangle fortran.f90 :comments link
+#+begin_src fortran :exports none :tangle fortran.f90 :comments link
 program hello
    implicit none
    write (*, *) 'Hello Fortran!'

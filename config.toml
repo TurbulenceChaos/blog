@@ -26,7 +26,7 @@ disablePathToLower = true
 
 # [markup.highlight]
 #   codeFences = true
-#   style = "emacs"
+#   style = "gruvbox-light"
 
 [menu]
 # [[menu.before]]

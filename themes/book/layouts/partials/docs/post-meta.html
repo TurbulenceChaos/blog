@@ -7,6 +7,6 @@
 {{ end }} -->
 
 {{ with .Lastmod }}
-<font size=1.05rem color = "gray"> updated on {{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }} </font>
+<font size=1.05rem color = "gray"> Last modified: {{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}. </font>
 {{ end }}
 <!-- .875 -->

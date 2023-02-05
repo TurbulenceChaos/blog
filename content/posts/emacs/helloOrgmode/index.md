@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-02-02T23:05:29+08:00
+lastmod = 2023-02-05T20:39:26+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -10,15 +10,15 @@ bookFlatSection = false
 bookCollapseSection = false
 +++
 
-## 1 Hello Org-mode {#1-hello-org-mode}
+## <span class="section-num">1</span> Hello Org-mode {#hello-org-mode}
 
 This article is written to show how to write and run codes in Org-mode. <br/>
 
 
-## 2 Codes in Org-babel {#2-codes-in-org-babel}
+## <span class="section-num">2</span> Codes in Org-babel {#codes-in-org-babel}
 
 
-### 2.1 Shell {#2-dot-1-shell}
+### <span class="section-num">2.1</span> Shell {#shell}
 
 ```org
 #+begin_src shell :results output :exports both
@@ -44,7 +44,7 @@ tree
 ```
 
 
-### 2.2 Emacs-lisp {#2-dot-2-emacs-lisp}
+### <span class="section-num">2.2</span> Emacs-lisp {#emacs-lisp}
 
 ```org
 #+begin_src emacs-lisp :results output :exports both
@@ -61,7 +61,7 @@ tree
 ```
 
 
-### 2.3 C++ {#2-dot-3-c-plus-plus}
+### <span class="section-num">2.3</span> C++ {#c-plus-plus}
 
 ```org
 #+begin_src cpp :results output :exports both
@@ -80,7 +80,7 @@ int main() {
 ```
 
 
-### 2.4 Fortran {#2-dot-4-fortran}
+### <span class="section-num">2.4</span> Fortran {#fortran}
 
 ```org
 #+begin_src fortran :exports none :tangle fortran.f90 :comments link
@@ -97,7 +97,25 @@ end program hello
 ```
 
 
-### 2.5 Python {#2-dot-5-python}
+### <span class="section-num">2.5</span> Julia {#julia}
+
+```org
+#+begin_src julia :results output :tangle julia.jl :comments link
+function greet()
+  print("Hello Julia!")
+end
+greet()
+#+end_src
+```
+
+```org
+#+RESULTS:
+: greet (generic function with 1 method)
+: Hello Julia!
+```
+
+
+### <span class="section-num">2.6</span> Python {#python}
 
 ```org
 #+begin_src python :session :results output :exports both :tangle py.py :comments link
@@ -114,7 +132,7 @@ print(math.pi)
 ```
 
 
-### 2.6 Octave {#2-dot-6-octave}
+### <span class="section-num">2.7</span> Octave {#octave}
 
 ```org
 #+begin_src octave :session :results output :exports both
@@ -133,7 +151,7 @@ ans = x
 ```
 
 
-### 2.7 R {#2-dot-7-r}
+### <span class="section-num">2.8</span> R {#r}
 
 Use the `session: *code buffer name*` so that different R code blocks can share the data. The default buffer name is "R". <br/>
 
@@ -162,7 +180,7 @@ xyplot(1:10 ~ 1:10)
 {{< figure src="R.png" caption="<span class=\"figure-number\">Figure 1: </span>R code" >}} <br/>
 
 
-### 2.8 Gnuplot {#2-dot-8-gnuplot}
+### <span class="section-num">2.9</span> Gnuplot {#gnuplot}
 
 ```org
 #+begin_src gnuplot :session :file gnuplot.png :exports both
@@ -173,7 +191,7 @@ plot sin(x) + cos(x)
 {{< figure src="gnuplot.png" caption="<span class=\"figure-number\">Figure 2: </span>Gnuplot" >}} <br/>
 
 
-### 2.9 Tikz {#2-dot-9-tikz}
+### <span class="section-num">2.10</span> Tikz {#tikz}
 
 ```org
 #+name: tikz example
@@ -264,10 +282,10 @@ plot sin(x) + cos(x)
 {{< figure src="tikz.png" caption="<span class=\"figure-number\">Figure 3: </span>[Tikz codes](https://texample.net/tikz/examples/signpost/)" >}} <br/>
 
 
-## 3 Others {#3-others}
+## <span class="section-num">3</span> Others {#others}
 
 
-### 3.1 HTML and CSS {#3-dot-1-html-and-css}
+### <span class="section-num">3.1</span> HTML and CSS {#html-and-css}
 
 [Here](https://olmon.gitlab.io/org-themes/) are the collections of CSS to make HTML more readable. <br/>
 
@@ -277,13 +295,13 @@ plot sin(x) + cos(x)
 ```
 
 
-### 3.2 Tangle and detangle {#3-dot-2-tangle-and-detangle}
+### <span class="section-num">3.2</span> Tangle and detangle {#tangle-and-detangle}
 
 Add `tangle: PATH/python.py` and `comment: link` above the code block. Use `C-c C-v t` to tangle codes. Open the code file in Emacs and type `M-x org-babel-detangle` to update the code block in the Org file. <br/>
-See [2.5 Python](#2-dot-5-python) and [2.7 R](#2-dot-7-r). <br/>
+See [2.6](#python) and [2.8](#r). <br/>
 
 
-### 3.3 Auto number the picture {#3-dot-3-auto-number-the-picture}
+### <span class="section-num">3.3</span> Auto number the picture {#auto-number-the-picture}
 
 You can use the `#+caption` function to assign titles to figures or codes. However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) in org 9.6 where the figures will get the same number in the output file. You need to modify them manually. This bug has been fixed in org 9.6.1. <br/>
 If you use doom emacs, you can add `(unpin! org)` in `~/.doom.d/packages.el` and type `doom upgrade` in the shell command to update the org. <br/>

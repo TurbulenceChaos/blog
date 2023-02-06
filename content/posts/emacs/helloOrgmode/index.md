@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-02-05T20:39:26+08:00
+lastmod = 2023-02-06T13:31:29+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -304,7 +304,7 @@ See [2.6](#python) and [2.8](#r). <br/>
 ### <span class="section-num">3.3</span> Auto number the picture {#auto-number-the-picture}
 
 You can use the `#+caption` function to assign titles to figures or codes. However, there exists a [bug](https://github.com/kaushalmodi/ox-hugo/issues/686) in org 9.6 where the figures will get the same number in the output file. You need to modify them manually. This bug has been fixed in org 9.6.1. <br/>
-If you use doom emacs, you can add `(unpin! org)` in `~/.doom.d/packages.el` and type `doom upgrade` in the shell command to update the org. <br/>
+If you use doom emacs, you can add `(unpin! org)` in `~/.doom.d/packages.el` and input `doom upgrade` in the shell command to update the org. <br/>
 
 ```org
 #+caption: [[https://en.wikipedia.org/wiki/Peanuts][Snoopy]]

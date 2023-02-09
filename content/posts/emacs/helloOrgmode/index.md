@@ -1,7 +1,7 @@
 +++
 title = "Hello Org-mode"
 date = 2023-01-28T18:00:00+08:00
-lastmod = 2023-02-06T13:31:29+08:00
+lastmod = 2023-02-09T21:35:00+08:00
 tags = ["Org-mode"]
 categories = ["Emacs"]
 draft = false
@@ -287,7 +287,7 @@ plot sin(x) + cos(x)
 
 ### <span class="section-num">3.1</span> HTML and CSS {#html-and-css}
 
-[Here](https://olmon.gitlab.io/org-themes/) are the collections of CSS to make HTML more readable. <br/>
+You can add CSS to make HTML more readable. <br/>
 
 ```org
 #+OPTIONS: html-style:nil

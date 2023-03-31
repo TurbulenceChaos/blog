@@ -9,7 +9,7 @@ bookCollapseSection = false
 [menu]
   [menu.after]
     identifier = "home"
-    weight = 4
+    weight = 2
 +++
 
 {{< columns >}}
